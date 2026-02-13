@@ -341,6 +341,16 @@ function heartFormationAnimation(callback){
     ));
   }
 
+  const letters = generateLetters(size);
+    letters.forEach(p=>{
+    particles.push(createParticle(
+    Math.random()*canvas.width,
+    Math.random()*canvas.height,
+    centerX + p.x,
+    centerY + p.y
+    ));
+        });
+
   let frame = 0;
 
   function animate(){
@@ -373,6 +383,31 @@ function heartFormationAnimation(callback){
 function createParticle(x,y,tx,ty){
   return {x,y,tx,ty};
 }
+
+function generateLetters(size){
+  const points=[];
+  const ox=-size*4;
+  const oy=size;
+
+  // E
+  for(let i=-4;i<=4;i++) points.push({x:ox, y:oy+i*5});
+  for(let i=0;i<=6;i++){
+    points.push({x:ox+i*4, y:oy+20});
+    points.push({x:ox+i*4, y:oy});
+    points.push({x:ox+i*4, y:oy-20});
+  }
+
+  // D
+  const dx=size*2;
+  for(let i=-4;i<=4;i++) points.push({x:dx, y:oy+i*5});
+  for(let a=-90;a<=90;a+=10){
+    const r=a*Math.PI/180;
+    points.push({x:dx+Math.cos(r)*20, y:oy+Math.sin(r)*20});
+  }
+
+  return points;
+}
+
 
 /* =====================================================
    FUEGOS ARTIFICIALES (IGUAL)
