@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Denis ❤️ Ema",
+  "startBackground": "photos/inicio.jpg",
+
+  "startTexts": [
+    "❤️ SORPRESA ❤️",
+    "❤️ Abre tu regalo ❤️",
+    "❤️ Mi amor ❤️"
+  ],
+
+  "giftGif": "photos/regalo.gif",
+
+  "names": "Denis ❤️ Ema",
+
+  "letter": {
+    "title": "Feliz 14 de febrero ❤️",
+    "paragraphs": [
+      "A tu lado descubrí el verdadero significado del amor. Gracias por tu paciencia, tu fuerza y cada instante que construimos juntos.",
+      "Eres mi hogar, mi paz y mi felicidad diaria. Si volviera a nacer, te elegiría siempre."
+    ],
+    "signature": "Con todo mi corazón,<br>Denis 💖"
+  },
+
+  "photos": [
+    "photos/foto100.jpg",
+    "photos/foto20.jpg",
+    "photos/foto30.jpg",
+    "photos/foto4.jpg",
+    "photos/foto5.jpg",
+    "photos/foto6.jpg",
+    "photos/foto7.jpg",
+    "photos/foto8.jpg",
+    "photos/foto10.jpg",
+    "photos/foto11.jpg",
+    "photos/foto12.jpg",
+    "photos/foto13.jpg"
+  ],
+
+  "music": "music/Thousand.mp3"
+}
